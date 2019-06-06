@@ -1,0 +1,38 @@
+.paint-image-section{
+    position: relative;
+	top: 100px;   
+	width: 100%;	
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+     .text-container {
+		width: 50%;
+		margin-top: 5%;
+		 .text-inner{ 
+			 width: 100%;			 
+			 h3{
+				 font-size: 60px;				
+				 letter-spacing: 1px;	
+				 margin-bottom: 1.5rem;	
+				 font-weight: 600;	
+				}
+				p{
+					line-height: 1.5;
+					font-size: 20px;
+				}
+			} 
+		}
+	.img-container {
+		box-sizing: border-box;
+		padding: 2rem;
+        text-align: center;
+        width: 50%;
+        height: auto;
+		border-radius: 7px;
+		.paint {
+			width: 500px;
+			height: 400px;
+		}
+		
+	}
+}

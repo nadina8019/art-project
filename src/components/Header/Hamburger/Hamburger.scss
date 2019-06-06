@@ -1,0 +1,36 @@
+.hamburger {
+    position: fixed;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    box-shadow: 2px 5px 5px #444;  
+    top: 70px;
+    left: 0;
+    z-index: 200;
+    
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 70px;
+        line-height: 2;
+    }
+    & li {
+        margin: 0.3rem 0;
+    }
+    & a {
+        text-decoration: none;
+        color:#444;
+        font-size: 20px;
+        &:hover, :active {
+            color: #b89e4f;
+        }
+    }   
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display:none;
+    }
+}

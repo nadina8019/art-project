@@ -1,0 +1,193 @@
+main {  
+  position: relative;
+  perspective: 1100px;
+  background: rgba(0, 0, 0, 1);
+  transition: all 1s ease;
+  top: -100px;
+  height: 600px;
+  .img{
+    display:none !important;
+    opacity:0 !important;
+    position: absolute !important;
+    left: -999%;
+    top:-999%;
+  }
+      .box {
+        position: relative;
+        top: 20%;
+        width: 65%;
+        margin: 10% auto;
+        padding-bottom: 25%;
+        transform: rotateY(29deg);
+        transform-style: preserve-3d;
+        div.top {
+          position: absolute;
+          top: 0;
+          width: 30.3%;
+          height: 100%;
+          float: left;
+          background-image: url('http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg');
+          background-size: auto 100%;
+          transform-style: preserve-3d;
+          outline: 1px solid transparent;		
+          animation: changeIt 25s infinite;
+          &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(#1abc9c, .15);
+          }
+        }
+        .left {
+          left: 0;
+          background-position: 0% 0;
+        }
+        .center {
+          left: 34.83%;
+          background-position: -100% 0;
+        }
+        .right {
+          left: 69.66%;
+          background-position: -197% 0;
+        }
+        div.top > .side {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 100%;
+          width: 10%;
+          height: 100%;
+          background: url('http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg');
+          background-size: auto 100%;
+          transform-origin: 100% 50%;
+          transform: rotateY(-90deg);
+          -webkit-backface-visibility: hidden !important;          
+          animation: changeIt 25s infinite;
+          &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(#1abc9c, .15);
+          }
+        }
+        .left > .side {
+          background-position: 0% 0;
+        }
+        .center > .side {
+          background-position: -798% 0px !important;
+        }
+        .right > .side {
+          background-position: -2000.4% 0 !important;
+        }
+        div.top .reflection {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform-origin: 50% 100%;
+          transform: rotateX(-90deg);
+          background-image: url('http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg');
+          background-size: auto 100%;
+          outline: 1px solid transparent;         
+          animation: changeIt 25s infinite;
+        }
+        .left > .reflection {
+          left: 0;
+          background-position: 0% 0;
+        }
+        .center > .reflection {
+          left: 34.83%;
+          background-position: -100% 0;
+        }
+        .right > .reflection {
+          left: 69.66%;
+          background-position: -197% 0;
+        }
+        .overlay {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 99.7%;
+          transform-origin: 50% 100%;
+          transform: rotateX(-90deg);
+          background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 123%);
+          outline: 15px solid black;
+        }
+      }
+    }
+
+    @-webkit-keyframes changeIt {
+      0% {
+        background-image: url(http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg)
+      }
+      20% {
+        background-image: url(http://клод-моне.рф/images/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B%20%D0%9A%D0%BB%D0%BE%D0%B4%20%D0%9C%D0%BE%D0%BD%D0%B5%2018/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B%20%D0%9A%D0%BB%D0%BE%D0%B4%D0%B0%20%D0%9C%D0%BE%D0%BD%D0%B5/%D0%9C%D0%BE%D1%81%D1%82%20%D0%92%D0%B0%D1%82%D0%B5%D1%80%D0%BB%D0%BE%D0%BE%201902%D0%B3.jpg)
+      }
+      40% {
+        background-image: url(https://i.ytimg.com/vi/8JacZwfLs2g/maxresdefault.jpg)
+      }
+      60% {
+        background-image: url(https://artchive.ru/res/media/img/oy800/work/277/347229.jpg)
+      }
+      80% {
+        background-image: url(https://leningradcenter.ru/uploads/thumbs/lc/1920x1080_cropped_2a69eea65a1d9b098d9f1f63d8c41c0a.jpg)
+      }
+      100% {
+        background-image: url(http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg)
+      }
+    }
+    
+    
+    
+    
+    @keyframes changeIt {
+      0% {
+        background-image: url(http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg)
+      }
+      20% {
+        background-image: url(http://клод-моне.рф/images/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B%20%D0%9A%D0%BB%D0%BE%D0%B4%20%D0%9C%D0%BE%D0%BD%D0%B5%2018/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B%20%D0%9A%D0%BB%D0%BE%D0%B4%D0%B0%20%D0%9C%D0%BE%D0%BD%D0%B5/%D0%9C%D0%BE%D1%81%D1%82%20%D0%92%D0%B0%D1%82%D0%B5%D1%80%D0%BB%D0%BE%D0%BE%201902%D0%B3.jpg)
+      }
+      40% {
+        background-image: url(https://i.ytimg.com/vi/8JacZwfLs2g/maxresdefault.jpg)
+      }
+      60% {
+        background-image: url(https://artchive.ru/res/media/img/oy800/work/277/347229.jpg)
+      }
+      80% {
+        background-image: url(https://leningradcenter.ru/uploads/thumbs/lc/1920x1080_cropped_2a69eea65a1d9b098d9f1f63d8c41c0a.jpg)
+      }
+      100% {
+        background-image: url(http://www.wm-painting.ru/images/ShkD4/monet-nympheas.jpg)
+      }
+    }
+
+    @media (max-width: 992px){
+      main {       
+        top: -20px;
+        height: 500px;
+      }     
+  }
+    @media (max-width: 768px){
+      main {       
+        top: -10px;
+        height: 400px;
+      }
+     
+    }
+
+    @media (max-width: 576px){
+      main {       
+        top: 10px;
+        height: 300px;
+      }
+     
+    }
