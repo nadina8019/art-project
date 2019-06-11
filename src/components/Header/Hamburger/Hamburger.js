@@ -9,6 +9,7 @@ const Hamburger = props => {
             <li><Link to='/about'>Обо мне</Link></li>
             <li><Link to='/works'>Галерея</Link></li>
             <li><Link to='/exhibition'>Выставки</Link></li>
+            <li><Link to='/search'>Художники</Link></li>
             <li><a href="#">Контакты</a></li>
           </ul>
      </nav>

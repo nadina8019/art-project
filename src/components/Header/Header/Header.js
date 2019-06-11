@@ -11,7 +11,7 @@ const Header = props => (
           <ToggleButton click= {props.hamClickHandler} />
         </div>
         <div className="header_logo">
-          <Link to="/" className="logo">Клод<span> Моне</span></Link>
+          <Link to="/" className="logo">Арт<span> Галерея</span></Link>
         </div>
         <div className="spacer" />
         <div className="header_navigation-items">
@@ -20,6 +20,7 @@ const Header = props => (
           <li><Link to='/about'>О себе</Link></li>
           <li><Link to='/works'>Галерея</Link></li>
             <li><Link to='/exhibition'>Выставки</Link></li>
+            <li><Link to='/search'>Художники</Link></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>

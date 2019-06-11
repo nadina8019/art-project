@@ -9,13 +9,13 @@ class AboutContent extends Component {
         <Container  className='about-content'>           
             <Row>               
                 <Col sm="12" lg="6" md="10">               
-                    <img className="paint" 
-                        src="https://artchive.ru/res/media/img/oy1000/work/66f/294306.jpeg" alt="" />                      
+                    <img className="gallery-photo" 
+                        src="https://theins.ru/wp-content/uploads/2017/11/1-25.jpg" alt="" />                      
                 </Col>					
                 <Col sm="12" lg="6" md="10">   
-                    <p className='span-center'>Художник</p>                 	                                 
-                    <h3 className="block-title">Клод Моне</h3>
-                    <p>Оска́р Клод Моне́ (фр. Oscar-Claude Monet; 14 ноября 1840, Париж — 5 декабря 1926, Живерни) — французский живописец, один из основателей импрессионизма. Художник, который не только стал одним из основателей импрессионизма, но и дал название этому направлению живописи. Именно из-за его картины, описывающий восход солнца в порту Гавра впоследствии так назовут новое художественное течение.</p>                
+                    <p className='span-center'>Арт</p>                 	                                 
+                    <h3 className="block-title">Галерея</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                
                 </Col>                 
             </Row>
          </Container>

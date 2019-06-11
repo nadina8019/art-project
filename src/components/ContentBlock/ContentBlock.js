@@ -6,18 +6,35 @@ import './ContentBlock.scss';
 class ContentBlock extends Component {
   render() {
     return (
-        <Container  className='justify-content-center'>
-            <p className="span-center">Жанр</p>
-            <h1 className="main-title">Импрессионизм</h1>
-            <Row>               
-                <Col sm="12" lg="6" md="10">               
+        <Container>
+            <p className="span-center">Наши</p>
+            <h1 className="main-title">Художники</h1>
+            <Row className="justify-content-center">               
+                <Col sm="12" lg="4" md="6">               
                     <img className="paint" 
-                        src="https://artchive.ru/res/media/img/oy1000/work/66f/294306.jpeg" alt="" />                      
+                        src="https://24smi.org/public/media/celebrity/2017/05/02/gGw5ZJ7YVhZE_pablo-pikasso.jpg" alt="" /> 
+                        <h4 className="p-name">Пабло Пикассо</h4>                      
                 </Col>					
-                <Col sm="12" lg="6" md="10">                    	                                 
-                    <h3 className="block-title">Клод Моне</h3>
-                    <p>Оскар Клод Моне – великий импрессионист, всю свою жизнь рисовавший картины. Художник является основателем и теоретиком французского импрессионизма, которому следовал на протяжении всего творческого пути. </p>                
-                </Col>                 
+                <Col sm="12" lg="4" md="6">                    	                                 
+                    <img className="paint" 
+                        src="http://www.arthistory.ru/img/dali/salvador_dali_foto.jpg" alt="" /> 
+                        <h4 className="p-name">Сальвадор Дали</h4> 
+                </Col>       
+                <Col sm="12" lg="4" md="6">                    	                                 
+                    <img className="paint" 
+                        src="https://muzei-mira.com/templates/museum/images/artist/edgar-dega+.jpg" alt="" />  
+                        <h4 className="p-name">Эдгар Дега</h4> 
+                </Col>      
+                <Col sm="12" lg="4" md="6" >                    	                                 
+                    <img className="paint" 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kustodiev_BM.jpg/200px-Kustodiev_BM.jpg" alt="" /> 
+                        <h4 className="p-name">Борис Кустодиев</h4>  
+                </Col>      
+                <Col sm="12" lg="4" md="6" >                    	                                 
+                    <img className="paint" 
+                        src="https://artchive.ru/res/media/img/oy1000/work/66f/294306.jpeg" alt="" />  
+                        <h4 className="p-name">Клод Моне</h4> 
+                </Col>              
             </Row>
          </Container>
         );

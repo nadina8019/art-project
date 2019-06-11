@@ -1,7 +1,7 @@
 import React from 'react';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
-import Container from 'react-bootstrap/Container';
+import { Container } from 'reactstrap';
 
 import './Gallery.scss'
 
